@@ -1,6 +1,9 @@
 require_relative "tile"
+require "byebug"
 
 class Board
+  attr_accessor :grid
+
   def self.empty_grid
     Array.new(9) do
       Array.new(9) { Tile.new(0) }
